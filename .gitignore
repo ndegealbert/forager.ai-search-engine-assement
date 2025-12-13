@@ -1,0 +1,69 @@
+# ====================
+# Python
+# ====================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ====================
+# Virtual Environments
+# ====================
+venv/
+.venv/
+env/
+ENV/
+
+# ====================
+# Environment Variables / Secrets
+# ====================
+.env
+.env.*
+*.env
+
+# ====================
+# FastAPI / App runtime
+# ====================
+logs/
+*.log
+
+# ====================
+# Uvicorn / Gunicorn
+# ====================
+*.pid
+
+# ====================
+# Database (local dev)
+# ====================
+*.sqlite3
+db.sqlite3
+
+# ====================
+# Testing / Coverage
+# ====================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ====================
+# Build / Packaging
+# ====================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ====================
+# IDE / Editors
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ====================
+# OS
+# ====================
+.DS_Store
+Thumbs.db
