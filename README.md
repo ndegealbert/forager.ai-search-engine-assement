@@ -19,8 +19,6 @@ A **scalable FastAPI-based Search and URL Recrawl API** designed for high-throug
   - [Recrawl API](#recrawl-api)
 - [Webhooks](#webhooks)
 - [Rate Limiting](#rate-limiting)
-- [Configuration](#configuration)
-- [Production Deployment](#production-deployment)
 
 ---
 
