@@ -363,16 +363,6 @@ When a `callback_url` is provided in the recrawl request, the API will send a PO
 }
 ```
 
-### Webhook Security
-
-Your webhook endpoint should:
-- Respond with HTTP 200-299 status codes
-- Process requests within 5 seconds
-- Implement retry logic on your end if needed
-- Validate the `job_id` against your records
-
----
-
 ## Rate Limiting
 
 **Limits:** 1000 requests per minute per API key
