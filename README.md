@@ -431,35 +431,9 @@ LOG_LEVEL=INFO
 
 ---
 
-## Production Deployment
 
-### Recommended Changes for Production
 
-1. **Persistence Layer**
-   - Replace in-memory stores with Redis or PostgreSQL
-   - Implement proper session management
-   - Add database migrations (Alembic)
-
-2. **Security**
-   - Use environment variables for secrets
-   - Implement API key rotation
-   - Add HTTPS/TLS encryption
-   - Enable CORS appropriately
-   - Add request validation and sanitization
-
-3. **Monitoring**
-   - Integrate logging (structured logs)
-   - Add application metrics (Prometheus)
-   - Implement health check endpoints
-   - Set up error tracking (Sentry)
-
-4. **Scalability**
-   - Deploy multiple Celery workers
-   - Use Redis Cluster for high availability
-   - Implement connection pooling
-   - Add load balancing (nginx/HAProxy)
-
-5. **Docker Deployment**
+**Docker Deployment**
    ```bash
    docker-compose up -d
    ```
