@@ -395,44 +395,6 @@ When the rate limit is exceeded, the API returns:
 
 ---
 
-## Configuration
-
-### Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-# API Configuration
-API_HOST=0.0.0.0
-API_PORT=8000
-API_WORKERS=4
-
-# Redis Configuration
-REDIS_HOST=localhost
-REDIS_PORT=6379
-REDIS_DB=0
-
-# Celery Configuration
-CELERY_BROKER_URL=redis://localhost:6379/0
-CELERY_RESULT_BACKEND=redis://localhost:6379/0
-
-# Rate Limiting
-RATE_LIMIT_REQUESTS=1000
-RATE_LIMIT_WINDOW=60
-
-# SLA Configuration
-SLA_HIGH_PRIORITY_MINUTES=15
-SLA_MEDIUM_PRIORITY_MINUTES=60
-SLA_LOW_PRIORITY_MINUTES=240
-
-# Logging
-LOG_LEVEL=INFO
-```
-
----
-
-
-
 **Docker Deployment**
    ```bash
    docker-compose up -d
